@@ -6,6 +6,6 @@
 })();
 
 ((name) => {
-    // Unamed IIFE
+    // Unamed IIFE 
     console.log(`DB 2 CONNECTED ${name}`);
 })("Shivansu");
