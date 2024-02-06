@@ -24,20 +24,28 @@
     color: rgb(241, 241, 241);
   }
   
-  button {
+  .button{
+    margin: auto;
     width: 150px;
     height: 35px;
     margin-left: 90px;
-    margin-top: 25px;
-    background-color: #fff;
+    margin-top: 10px;
+    background-color: #212121;
     padding: 1px 30px;
     border-radius: 8px;
-    color: #212121;
-    text-decoration: none;
+    color: white;
+    text-decoration: underline  red ;
     border: 2px solid #212121;
-  
-    font-size: 25px;
+    box-shadow: 4px 4px 4px #252222;
+    font-size: 20px;
+    font-weight: bold;
+    transition: 0.7s;
   }
+  .button:hover {
+    background-color: blue;
+    border-color: black;
+}
+
   
   h1 {
     padding-left: 15px;
