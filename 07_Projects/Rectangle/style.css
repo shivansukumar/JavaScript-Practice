@@ -1,0 +1,23 @@
+*{
+    margin : 0;
+    padding : 0;
+    box-sizing: border-box;
+    font-family: 'Gilroy';
+}
+
+html, body {
+    height: 100%;
+    width: 100%;
+    background-color: #b23548e1;
+    /* color: rgb(20, 61, 97); */
+}
+
+#center {
+    width: 400px;
+    height: 200px;
+    border: 2px solid rgb(0, 0, 0);
+    position: absolute;
+    top: 50%; /* Move the top edge of the div to the middle of the body */
+    left: 50%; /* Move the left edge of the div to the middle of the body */
+    transform: translate(-50%, -50%); 
+}
