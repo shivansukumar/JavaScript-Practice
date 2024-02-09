@@ -1,0 +1,34 @@
+*{
+    margin : 0;
+    padding :0;
+    box-sizing: border-box;
+}
+
+html, body {
+    width: 100%;
+    height: 100%;
+}
+
+body {
+    background-color: black;
+    color: white;
+}
+
+.rectangle {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 400px;
+    height: 200px;
+    background-color: rgb(170, 12, 12);
+    border: 2px solid black;
+}
+
+.rectangle h3 {
+    margin: 0; /* Remove default margin */
+    position: absolute; /* Position the h3 element */
+    top: 50%; /* Move the h3 element down by 50% of the rectangle height */
+    left: 50%; /* Move the h3 element to the right by 50% of the rectangle width */
+    transform: translate(-50%, -50%); /* Center the h3 element */
+}
