@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style3.css">
+</head>
+
+<body style="background-color: rgb(19, 11, 28);color: white">
+    <h1>Third HTML</h1>
+    <button id="start">Start</button>
+    <button id="stop">Stop</button>
+</body>
+<script>
+    const sayDate = function (str) {
+        console.log("Shivansu", str, Date.now());
+    }
+    // const setId = setInterval(sayDate, 2000, "hi");
+
+    // const clearId = clearInterval(setId);
+
+    let start = document.querySelector("#start");
+    let stop = document.querySelector("#stop");
+
+    var setId;
+    start.addEventListener('click', function () {
+        setId = setInterval(sayDate, "hi", 2000);
+    })
+
+    stop.addEventListener('click', function () {
+
+        clearInterval(setId);
+    })
+
+
+</script>
+
+</html>

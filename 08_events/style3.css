@@ -1,0 +1,52 @@
+/* Styling for the start button */
+#start {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    color: #fff;
+    background-color: rgba(76, 175, 80, 0.5); /* Adjust the color and opacity */
+    border: none;
+    border-radius: 5px;
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+  }
+  
+  /* Hover effect for the start button */
+  #start:hover {
+    background-color: rgba(76, 175, 80, 0.7); /* Adjust the opacity */
+  }
+  
+  /* Active effect for the start button */
+  #start:active {
+    background-color: rgba(76, 175, 80, 0.9); /* Adjust the opacity */
+  }
+  
+  /* Styling for the stop button */
+  #stop {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    color: #fff;
+    background-color: rgba(244, 67, 54, 0.5); /* Adjust the color and opacity */
+    border: none;
+    border-radius: 5px;
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+  }
+  
+  /* Hover effect for the stop button */
+  #stop:hover {
+    background-color: rgba(244, 67, 54, 0.7); /* Adjust the opacity */
+  }
+  
+  /* Active effect for the stop button */
+  #stop:active {
+    background-color: rgba(244, 67, 54, 0.9); /* Adjust the opacity */
+  }
+  
