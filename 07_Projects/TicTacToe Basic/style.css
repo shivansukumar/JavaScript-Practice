@@ -19,3 +19,14 @@ nav{
 nav ul {
     list-style-type: none;
 }
+
+.gameContainer {
+    background-color: yellowgreen;
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+}
+
+.container {
+
+}

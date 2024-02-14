@@ -24,12 +24,13 @@ function onMouseMove(details) {
     }
 }
 
+
 var code = document.querySelector(".rectangle"); // Selecting the element with the class "rectangle"
 
 window.addEventListener("click", function () {
     mouseActive = !mouseActive;
     if (mouseActive == false) {
-        code.innerHTML = "<h3><em>Color Changing Rectangle</em ></h3 > "; // Fixing the case of innerHTML and closing tags
+        code.innerHTML = "<h3><em>At the stroke of the midnight, i want my strokes to take you on a roller coaseter ride and live a moment of our past again.Will Love to see your pounding bosom</em ></h3 > "; // Fixing the case of innerHTML and closing tags
     } else {
         code.innerHTML = "";
     }
