@@ -23,7 +23,9 @@ const checkWin = () => {
         [2, 4, 6],
     ]
     wins.forEach(e => {
-        if ((boxtexts[e[0]].innerText === boxtexts[e[0]].innerText))
+        if ((boxtexts[e[0]].innerText === boxtexts[e[1]].innerText) && (boxtexts[e[1]].innerText === boxtexts[e[2]].innerText) && (boxtexts[e[0]].innerText !== "")) {
+            document.querySelector('.info').innerText + " Won"
+        }
     })
 }
 
