@@ -3,6 +3,7 @@ let music = new Audio("music.mp3");
 let audioTurn = new Audio("ting.mp3");
 let gameover = new Audio("gameover.mp3");
 let turn = "X"
+let isGameOver = false;
 
 // Function to Change the turn
 const changeTurn = () => {
@@ -21,15 +22,22 @@ const checkWin = () => {
         [2, 5, 8],
         [0, 4, 8],
         [2, 4, 6],
-    ]
+    ];
+    let winner = null;
+
     wins.forEach(e => {
         if ((boxtexts[e[0]].innerText === boxtexts[e[1]].innerText) && (boxtexts[e[1]].innerText === boxtexts[e[2]].innerText) && (boxtexts[e[0]].innerText !== "")) {
-            document.querySelector('.info').innerText + " Won"
+            winner = boxtexts[e[0]].innerText;
+            isGameOver = true;
         }
-    })
+    });
+    if (winner) {
+        document.querySelector('.info').innerText = winner + " Won";
+    }
 }
 
 // Game Logic
+music.play();
 let boxes = document.getElementsByClassName("box");
 Array.from(boxes).forEach(element => {
     let boxtext = element.querySelector('.boxtext');
@@ -39,7 +47,9 @@ Array.from(boxes).forEach(element => {
             turn = changeTurn();
             audioTurn.play();
             checkWin();
-            document.getElementsByClassName("info")[0].innerText = "Turn for " + turn;
+            if (!isGameOver) {
+                document.getElementsByClassName("info")[0].innerText = "Turn for " + turn;
+            }
         }
     })
 })
