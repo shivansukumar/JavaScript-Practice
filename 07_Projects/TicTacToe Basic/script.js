@@ -29,6 +29,7 @@ const checkWin = () => {
         if ((boxtexts[e[0]].innerText === boxtexts[e[1]].innerText) && (boxtexts[e[1]].innerText === boxtexts[e[2]].innerText) && (boxtexts[e[0]].innerText !== "")) {
             winner = boxtexts[e[0]].innerText;
             isGameOver = true;
+            document.querySelector('.imgbox').getElementsByTagName('img')[0].style.width = "100px"
         }
     });
     if (winner) {
@@ -37,7 +38,7 @@ const checkWin = () => {
 }
 
 // Game Logic
-music.play();
+// music.play();
 let boxes = document.getElementsByClassName("box");
 Array.from(boxes).forEach(element => {
     let boxtext = element.querySelector('.boxtext');
